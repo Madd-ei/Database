@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="806c01fa-ee9a-4772-aa7c-9fc1e5539f6c" name="Changes" comment="Update Variable Names in Delete Function.&#10;&#10;still needs error handling.">
+      <change afterPath="$PROJECT_DIR$/src/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Madd-ei&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="62f2931e-4c88-438a-a964-30eb8d5e9ef3" />
+        <option name="url" value="https://github.com/Madd-ei/SER322_D4.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2iiZiMMbaPqOuFieHI27ZCjsj28" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.Server.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/maddi/Downloads/SER322_D4",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\maddi\Downloads\SER322_D4\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\maddi\Downloads\SER322_D4" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-18.0.2-corretto-18.0.2-4caba194b151-5720f15e" />
+        <option value="jdk-20.0.2-temurin-20.0.2-4caba194b151-b0be1f17" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="806c01fa-ee9a-4772-aa7c-9fc1e5539f6c" name="Changes" comment="" />
+      <created>1719975484006</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719975484006</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Add User Input for Database Info&#10;&#10;user can now provide url, username, password, and driver in run command.">
+      <option name="closed" value="true" />
+      <created>1719975674587</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1719975674587</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add Insert Functionality&#10;&#10;still needs error handling.">
+      <option name="closed" value="true" />
+      <created>1719981773053</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719981773053</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update .gitignore">
+      <option name="closed" value="true" />
+      <created>1719981906681</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719981906681</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Implement Delete Function&#10;&#10;still needs variables renamed and error handling.">
+      <option name="closed" value="true" />
+      <created>1719983108492</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719983108492</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update README.md">
+      <option name="closed" value="true" />
+      <created>1719983558311</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719983558311</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Implement Quit Function">
+      <option name="closed" value="true" />
+      <created>1719983899340</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719983899340</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Update Variable Names in Delete Function.&#10;&#10;still needs error handling.">
+      <option name="closed" value="true" />
+      <created>1719984210924</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1719984210924</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add User Input for Database Info&#10;&#10;user can now provide url, username, password, and driver in run command." />
+    <MESSAGE value="Add Insert Functionality&#10;&#10;still needs error handling." />
+    <MESSAGE value="Update .gitignore" />
+    <MESSAGE value="Implement Delete Function&#10;&#10;still needs variables renamed and error handling." />
+    <MESSAGE value="Update README.md" />
+    <MESSAGE value="Implement Quit Function" />
+    <MESSAGE value="Update Variable Names in Delete Function.&#10;&#10;still needs error handling." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Variable Names in Delete Function.&#10;&#10;still needs error handling." />
+  </component>
+</project>
