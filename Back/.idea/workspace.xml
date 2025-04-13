@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="806c01fa-ee9a-4772-aa7c-9fc1e5539f6c" name="Changes" comment="Update Variable Names in Delete Function.&#10;&#10;still needs error handling.">
-      <change beforePath="$PROJECT_DIR$/../Back/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Back/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SER322_D4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Back.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Front/connect.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Front/connect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Front/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +39,6 @@
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="62f2931e-4c88-438a-a964-30eb8d5e9ef3" />
-        <option name="url" value="https://github.com/Madd-ei/SER322_D4.git" />
       </UrlAndAccount>
     </option>
   </component>
@@ -53,30 +57,44 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.Run Server.executor": "Run",
     "Application.Server.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Maddison/Downloads/Database/Front",
+    "last_opened_file_path": "C:/Users/Maddison/Downloads/Database/Back/libs/mysql-connector",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propCompiler",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\maddi\Downloads\SER322_D4\src" />
+      <recent name="C:\Users\maddi\Downloads\Database\Back\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\maddi\Downloads\SER322_D4" />
+      <recent name="C:\Users\maddi\Downloads\Database\Back" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Run Server" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/.jdks/corretto-18.0.2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Back" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;jdbc:mysql://localhost:3306/Fitness_Tracker&quot; &quot;root&quot; &quot;OhBrother123&quot; &quot;com.mysql.cj.jdbc.Driver&quot;" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -94,6 +112,8 @@
       <option name="presentableId" value="Default" />
       <updated>1719975484006</updated>
       <workItem from="1744523485382" duration="315000" />
+      <workItem from="1744523991092" duration="2150000" />
+      <workItem from="1744526377121" duration="520000" />
     </task>
     <task id="LOCAL-00001" summary="Add User Input for Database Info&#10;&#10;user can now provide url, username, password, and driver in run command.">
       <option name="closed" value="true" />

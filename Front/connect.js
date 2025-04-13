@@ -12,3 +12,10 @@ function sendReq() {
         return response.text();
     });
 }
+
+async function loadResponse() {
+    const container = document.getElementById("java");
+    const root = ReactDOM.createRoot(container);
+    const res = await sendReq();
+    root.render(res);
+}

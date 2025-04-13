@@ -3,16 +3,20 @@
 <head>
 </head>
 <script src="connect.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", async () => {
-        const res = await sendReq();
-        document.getElementById("java").innerHTML = res;
-    });
-</script>
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
 <body>
     <h1>Database Management</h1>
     <div id="java">Waiting..</div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            loadResponse();
+        });
+    </script>
+        
 </body>
 
 <style>
