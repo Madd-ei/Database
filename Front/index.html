@@ -1,28 +1,34 @@
 <!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script src="connect.js" type="text/babel"></script>
+    </head>
 
-<head>
-</head>
-<script src="connect.js"></script>
-<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-<body>
-    <h1>Database Management</h1>
-    <div id="java">Waiting..</div>
+    <body>
+        <h1>Database Management</h1>
+        <div id="java">Waiting..</div>
+        <div>
+            <button id="insert-btn">Insert</button>
+            <button>Delete</button>
+        </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", async () => {
-            loadResponse();
-        });
-    </script>
-        
-</body>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+              console.log("DOM fully loaded!");
+            });
+        </script>
+            
+    </body>
 
-<style>
-    h1 {
-        border-color: red;
-        border-style: solid;
-    }
+    <style>
+        h1 {
+            border-color: red;
+            border-style: solid;
+        }
 
-</style>
+    </style>
+</html>

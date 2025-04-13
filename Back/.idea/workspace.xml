@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="806c01fa-ee9a-4772-aa7c-9fc1e5539f6c" name="Changes" comment="Update Variable Names in Delete Function.&#10;&#10;still needs error handling.">
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SER322_D4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Back.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Front/connect.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Front/connect.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Front/index.html" afterDir="false" />
     </list>
@@ -113,7 +108,7 @@
       <updated>1719975484006</updated>
       <workItem from="1744523485382" duration="315000" />
       <workItem from="1744523991092" duration="2150000" />
-      <workItem from="1744526377121" duration="520000" />
+      <workItem from="1744526377121" duration="2349000" />
     </task>
     <task id="LOCAL-00001" summary="Add User Input for Database Info&#10;&#10;user can now provide url, username, password, and driver in run command.">
       <option name="closed" value="true" />
