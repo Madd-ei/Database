@@ -43,7 +43,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # IDEs / editors
-.vscode/
+Front/.vscode/
 Back/.idea/
 *.suo
 *.ntvs*

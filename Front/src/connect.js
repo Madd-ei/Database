@@ -1,3 +1,7 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import TableList from './TableList';
+
 console.log("connect.js is loaded!");
 let root = null;
 
@@ -31,8 +35,8 @@ function sendGet(path) {
 
 async function loadResponse() {
     console.log("loadResponse called");
-    const res = await sendGet("/tables");
-    root.render(res);
+    root.render(<TableList />)
+
 }
 
 function insert() {

@@ -25,7 +25,7 @@ public class Server implements Runnable {
 			HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
 
 			server.createContext("/hello", exchange -> {
-				exchange.getResponseHeaders().add("Access-Control-Allow-Origin", "http://127.0.0.1:5500");
+				exchange.getResponseHeaders().add("Access-Control-Allow-Origin", "http://localhost:3000");
 				exchange.getResponseHeaders().add("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
 				exchange.getResponseHeaders().add("Access-Control-Allow-Headers", "Content-Type");
 
@@ -43,7 +43,7 @@ public class Server implements Runnable {
 			});
 
 			server.createContext("/tables", exchange -> {
-				exchange.getResponseHeaders().add("Access-Control-Allow-Origin", "http://127.0.0.1:5500");
+				exchange.getResponseHeaders().add("Access-Control-Allow-Origin", "http://localhost:3000");
 				exchange.getResponseHeaders().add("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
 				exchange.getResponseHeaders().add("Access-Control-Allow-Headers", "Content-Type");
 
@@ -52,8 +52,7 @@ public class Server implements Runnable {
 					return;
 				}
 
-				JsonObjectBuilder builder = Json.createObjectBuilder();
-				builder.add("Key", "Tables");
+				JsonArrayBuilder builder = Json.createArrayBuilder();
 
 				Statement tables = Main.getTables();
 
@@ -66,13 +65,13 @@ public class Server implements Runnable {
 
 					int i = 1;
 					while (rs.next()) {
-						builder.add(String.valueOf(i++), rs.getString(1));
+						builder.add(rs.getString(1));
 					}
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
 
-				JsonObject response = builder.build();
+				JsonArray response = builder.build();
 				byte[] bytes = response.toString().getBytes(StandardCharsets.UTF_8);
 
 				exchange.sendResponseHeaders(200, bytes.length);
