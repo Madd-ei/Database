@@ -44,11 +44,13 @@ yarn-error.log*
 
 # IDEs / editors
 .vscode/
-.idea/
+Back/.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
+*.iml
+Back/build/
 
 # Optional OS-specific files
 Thumbs.db
