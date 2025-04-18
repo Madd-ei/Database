@@ -2,12 +2,15 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class Main {
+
+    private static Connection con;
+    public static String SQL;
     public static void main(String[] args) {
-        Thread server = new Thread(new Server());
+        Thread server = new Thread(new Server(con));
         server.start();
 
         Scanner scn = new Scanner(System.in);
-        Connection con = null;
+        con = null;
 
         String url = "jdbc:mysql://localhost:3306/Fitness_Tracker";
         String user = "root";
@@ -70,7 +73,6 @@ public class Main {
                     break;
                 case "8":
                     break;
-
                 case "9":
                     quit = true;
                     try {
@@ -84,17 +86,54 @@ public class Main {
         }
     }
 
-    public static void insert(Connection con, Scanner scn) {
-        Statement t = null;
-        PreparedStatement col = null;
-        String tables = "SELECT table_name FROM information_schema.tables WHERE table_type = 'BASE TABLE' AND table_schema = 'fitness_tracker'";
-        String insert = "INSERT INTO ";
+    public static PreparedStatement getColumns(Statement tables, String ans) {
         String columns = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'fitness_tracker' AND TABLE_NAME = '";
+        PreparedStatement col = null;
 
+        try {
+            tables.getResultSet().first();
+            tables.getResultSet().absolute(Integer.parseInt(ans));
+            SQL += tables.getResultSet().getString(1);
+
+            columns += tables.getResultSet().getString(1) + "'";
+            col = con.prepareStatement(columns, ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+            col.executeQuery();
+            tables.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return col;
+
+    }
+
+    public static Statement getTables() {
+        String tables = "SELECT table_name FROM information_schema.tables WHERE table_type = 'BASE TABLE' AND table_schema = 'fitness_tracker'";
+        Statement t = null;
 
         try {
             t = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
             t.execute(tables);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return t;
+    }
+
+    public static void makeTableSelection() {
+
+    }
+
+    public static void insert(Connection con, Scanner scn) {
+        Statement t;
+
+        SQL = "INSERT INTO ";
+
+
+        try {
+            t = getTables();
 
             int i = 1;
             System.out.println("Choose a Table: ");
@@ -103,15 +142,8 @@ public class Main {
             }
 
             String ans = scn.nextLine();
-            t.getResultSet().first();
-            t.getResultSet().absolute(Integer.parseInt(ans));
-            PreparedStatement ins = con.prepareStatement(insert);
-            insert += t.getResultSet().getString(1);
 
-            columns += t.getResultSet().getString(1) + "'";
-            col = con.prepareStatement(columns, ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
-            col.executeQuery();
-            t.close();
+            PreparedStatement col = getColumns(t, ans);
 
             System.out.println("You need to provide the following inputs:");
             while (col.getResultSet().next()) {
@@ -120,8 +152,8 @@ public class Main {
             System.out.println("Please use this format: ('v1', 'v2', 'v3', ...)");
             col.close();
 
-            insert += " VALUES " + scn.nextLine();
-            ins = con.prepareStatement(insert);
+            SQL += " VALUES " + scn.nextLine();
+            PreparedStatement ins = con.prepareStatement(SQL);
             ins.executeUpdate();
             ins.close();
 

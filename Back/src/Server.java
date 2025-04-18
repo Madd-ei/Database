@@ -2,13 +2,18 @@ import com.sun.net.httpserver.HttpServer;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
+import java.sql.Connection;
 
 public class Server implements Runnable {
+	private final Connection con;
+
+	Server(Connection con) {
+		this.con = con;
+	}
 
 	public void run() {
 		try {
 			HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
-
 
 			server.createContext("/hello", exchange -> {
 				exchange.getResponseHeaders().add("Access-Control-Allow-Origin", "http://127.0.0.1:5500");
