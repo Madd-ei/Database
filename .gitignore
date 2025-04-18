@@ -23,11 +23,11 @@ hs_err_pid*
 replay_pid*
 
 # dependencies
-/node_modules
+Front/node_modules
 
 # production build
-/dist
-/build
+Front/dist
+Front/build
 
 # misc
 .DS_Store
@@ -51,8 +51,7 @@ Back/.idea/
 *.sln
 *.iml
 Back/build/
+Back/.gradle/
 
 # Optional OS-specific files
 Thumbs.db
-
-.gradle/
