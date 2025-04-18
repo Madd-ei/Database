@@ -13,9 +13,9 @@ function init() {
     });
 }
 
-function sendReq() {
+function sendGet(path) {
     console.log("Sending fetch request...");
-    return fetch ("http://localhost:8080/hello", {
+    return fetch ("http://localhost:8080" + path, {
         method: "GET",
         headers: {
             "Content-Type": "application/json"
@@ -25,13 +25,13 @@ function sendReq() {
         if (!response.ok) {
             throw new Error("Network reponse not ok");
         }
-        return response.text();
+        return response.json();
     });
 }
 
 async function loadResponse() {
-    console.log("loadResponse called")
-    const res = await sendReq();
+    console.log("loadResponse called");
+    const res = await sendGet("/tables");
     root.render(res);
 }
 

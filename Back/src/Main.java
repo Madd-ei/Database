@@ -3,11 +3,9 @@ import java.util.Scanner;
 
 public class Main {
 
-    private static Connection con;
+    public static Connection con;
     public static String SQL;
     public static void main(String[] args) {
-        Thread server = new Thread(new Server(con));
-        server.start();
 
         Scanner scn = new Scanner(System.in);
         con = null;
@@ -40,6 +38,9 @@ public class Main {
         } else {
             System.out.println("You did not provide the necessary inputs to complete your command.");
         }
+
+        Thread server = new Thread(new Server(con));
+        server.start();
 
         boolean quit = false;
         while (!quit) {

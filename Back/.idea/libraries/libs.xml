@@ -2,9 +2,11 @@
   <library name="libs">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/libs/mysql-connector" />
+      <root url="file://$PROJECT_DIR$/libs/json" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/libs/json" recursive="false" />
     <jarDirectory url="file://$PROJECT_DIR$/libs/mysql-connector" recursive="false" />
   </library>
 </component>

@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'javax.json:javax.json-api:1.1.4'
+    runtimeOnly 'org.glassfish:javax.json:1.1.4'
+    implementation fileTree(dir: 'libs', includes: ['**/*.jar'])
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'  // Directly point to the 'src' directory
+        }
+    }
+}
+
+task run(type: JavaExec) {
+    main = 'Main'
+    classpath = sourceSets.main.runtimeClasspath
+    classpath += files('libs/../*.jar')
+    args = [
+            "jdbc:mysql://localhost:3306/Fitness_Tracker", // Database URL
+            "root", // Username
+            "OhBrother123", // Password
+            "com.mysql.cj.jdbc.Driver" // JDBC Driver
+    ]
+}
+
+tasks.named('run') {
+    standardInput = System.in
+}
