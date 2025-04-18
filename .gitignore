@@ -52,3 +52,5 @@ yarn-error.log*
 
 # Optional OS-specific files
 Thumbs.db
+
+.gradle/
